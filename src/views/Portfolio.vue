@@ -1,14 +1,19 @@
 <template>
-    <div class="text-segment">
-        <h4>
-            Portfolio
-        </h4>
-        <hr>
+    <div>
+        <div class="text-segment">
+            <h3>
+                Portfolio
+            </h3>
+            <hr>
+        </div>
         <div class="screenshot-grid">
             <div v-for="(screenshot, index) in portfolio" :key="index" class="screenshot-item">
                 <img :src="getImage(screenshot.src)" width="240">
                 <p class="screenshot-caption">{{screenshot.caption}}</p>
             </div>
+        </div>
+        <div class="next">
+            <h4>Like what you see? <a href="/contact">Let's work together ></a></h4>
         </div>
     </div>
 </template>

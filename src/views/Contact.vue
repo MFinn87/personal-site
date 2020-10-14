@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="text-segment">
-        <h4>Let's get in touch! Leave me your info and a message, and I will get back to you ASAP.
-        </h4>
+        <h3>Let's get in touch! Leave me your info and a message, and I will get back to you ASAP.
+        </h3>
+        <hr>
     </div>
     <div class="center">
         <form
@@ -68,22 +69,22 @@ import axios from 'axios'
 export default {
   data: function () {
     return {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
       errors: [],
     }
   },
-  props: [
-    'text'
-  ],
   created() {
     this.clearInputFields();
   },
   methods: {
     clearInputFields: function() {
-        this.text = {};
-        this.text.name = '';
-        this.text.email = '';
-        this.text.phone = '';
-        this.text.message = '';
+        this.name = "";
+        this.email = "";
+        this.phone = "";
+        this.message = "";
     },
     checkForm: function(e) {
       e.preventDefault()
@@ -137,7 +138,6 @@ export default {
     border-radius: 0.25em;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
     resize: none;
-    width: 100%;
   }
   input[type="submit"] {
     width: 20%;
@@ -155,7 +155,6 @@ export default {
     color: #222;
 	}
   .size-inputs, textarea {
-    width: 75%;
     padding: 12px;
     background-color: #ffffff;
   }

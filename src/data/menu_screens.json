@@ -1,0 +1,22 @@
+[
+    {
+        "caption": "Home",
+        "href": "/",
+        "icon": "faHome"
+    },
+    {
+        "caption": "Solutions",
+        "href": "/solutions",
+        "icon": "faLightbulb"
+    },
+    {
+        "caption": "Portfolio",
+        "href": "/portfolio",
+        "icon": "faImages"
+    },
+    {
+        "caption": "Contact Me",
+        "href": "/contact",
+        "icon": "faComment"
+    }
+]

@@ -1,32 +1,28 @@
 <template>
 <div>
     <div class="text-segment">
-        <h4>What Can I Do For Your Business?
-        </h4>
+        <h3>What Can I Do For Your Business?
+        </h3>
         <hr>
-        <p>
+        <h4>
             I've launched several successful SaaS products and developed custom software for clients in the marketing, manufacturing, food/beverage, and pharmaceutical verticals. I've developed, extended, and maintained complex ERP, CRM, and Inventory Management systems.
-        </p>
-        <p>
+        </h4>
+        <h4>
             I'd be eager to learn more about your software needs, and conduct a feasibility analysis.
-        </p>
-        <p>
-            Some of the more common software development work I do is listed below.
-        </p>
+        </h4>
+        <h4>
+            Some of the more common software development work I do is listed below:
+        </h4>
     </div>
-
-    <div class="solution-grid">
-        <div v-for="(solution, index) in solutions" :key="index" class="solution-item">
-            {{solution}}
+    <div class="grid-wrapper">
+        <div class="solution-grid">
+            <div v-for="(solution, index) in solutions" :key="index" class="solution-item">
+                {{solution}}
+            </div>
         </div>
     </div>
-    <div class="text-segment">
-        <p>
-            I invite you to check out some <a href="/portfolio">examples</a> of applications I've made.
-        </p>
-        <p>
-            Interested in working together? <a href="/contact">Send me a message</a>
-        </p>
+    <div class="next">
+        <h4><a href="/portfolio">Explore portfolio ></a></h4>
     </div>
 </div>
 </template>
@@ -42,6 +38,10 @@ export default {
 }
 </script>
 <style scoped>
+    .grid-wrapper {
+        margin-top: 40px;
+    }
+
     .solution-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -55,5 +55,6 @@ export default {
         color: #121212;
         border-radius: 5px;
         padding: 20px;
+        text-align: center;
     }
 </style>
