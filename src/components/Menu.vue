@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="menu">
         <Slide right class="mobile-only">
             <a v-for="screen in menuScreens" :href="screen.href" :key="screen.caption"> 
                 <span><font-awesome-icon class="icon" :icon="getIcon(screen.icon)" size="1x" inverse/>  {{screen.caption}}</span>
@@ -62,5 +62,10 @@ export default {
 
     .navbar-item:hover {
         background-color: #303030;
+    }
+
+    .menu {
+        position: sticky;
+        top: 0;
     }
 </style>
