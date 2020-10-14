@@ -1,5 +1,10 @@
 [
     {
+        "caption": "Sales Results Dashboard",
+        "description": "This is a dashboard screen that allows users to see, at a high level, what sales occurred, and in what markets.",
+        "src": "assets/slo_dashboard.png"
+    },
+    {
         "caption": "Sales Lead Analysis",
         "description": "This is a dashboard screen that allows users to analyze sales results, grouped by marketing campaign.",
         "src": "assets/analysis1.png"
@@ -10,13 +15,8 @@
         "src": "assets/analysis2.png"
     },
     {
-        "caption": "Sales Results Dashboard",
-        "description": "This is a dashboard screen that allows users to see, at a high level, what sales occurred, and in what markets.",
-        "src": "assets/slo_dashboard.png"
-    },
-    {
         "caption": "Sales Lead Assignment",
-        "description": "This is a screen that lets users assign the most appropriate sales rep, to each sales lead. In short, you want the best sales rep on the most lucrative leads, and this ui makes it easy to do so.",
+        "description": "This is a screen that lets users assign the most appropriate sales rep, to each sales lead. In short, users want to assign the best available sales rep to the most lucrative leads, and this ui makes it easy to do so.",
         "src": "assets/slo_lead_assignment_notes.png"
     },
     {

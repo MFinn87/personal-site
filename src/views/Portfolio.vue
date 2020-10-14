@@ -1,15 +1,15 @@
 <template>
     <div>
-        <LightBox :media="media" ref="lightbox" :show-caption="true" :show-thumbs="false" :auto-play="false" :auto-play-time="9999999"></LightBox>
         <div class="text-segment">
             <h3>
                 Portfolio
             </h3>
             <hr>
         </div>
+        <LightBox :media="media" ref="lightbox" :show-caption="true" :show-thumbs="false" :auto-play="false" :auto-play-time="9999999"></LightBox>
         <div class="screenshot-grid">
             <div v-for="(screenshot, index) in portfolio" :key="index" class="screenshot-item">
-                <img :src="getImage(screenshot.src)" width="240" v-on:click="showLightbox(screenshot)">
+                <img class="screenshot-thumb" :src="getImage(screenshot.src)" height="240" v-on:click="showLightbox(screenshot)">
                 <p class="screenshot-caption">{{screenshot.caption}}</p>
             </div>
         </div>
@@ -72,6 +72,11 @@ export default {
         flex-direction: column;
         justify-content: center;
         cursor: pointer;
+        text-align: center;
+    }
+
+    .screenshot-thumb {
+        object-fit: cover;
     }
 
     .screenshot-caption {
