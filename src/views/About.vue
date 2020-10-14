@@ -22,7 +22,7 @@
             </p>
     -->
             <div class="next">
-                <h4><a href="/solutions">Explore software solutions ></a></h4>
+                <h4><a href="/solutions">Explore solutions</a></h4>
             </div>
         </div>
     </div>

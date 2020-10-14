@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="next">
-        <h4><a href="/portfolio">Explore portfolio ></a></h4>
+        <h4><a href="/portfolio">Explore portfolio</a></h4>
     </div>
 </div>
 </template>

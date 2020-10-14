@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="next">
-            <h4>Like what you see? <a href="/contact">Let's work together ></a></h4>
+            <h4><a href="/contact">Let's work together</a></h4>
         </div>
     </div>
 </template>
