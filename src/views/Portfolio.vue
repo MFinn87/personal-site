@@ -33,6 +33,9 @@ export default {
             media: []
         }
     },
+    mounted() {
+        this.$refs.lightbox.closeLightBox();
+    },
     methods: {
         getImage(image) {
             return require(`@/${image}`);
@@ -68,6 +71,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        cursor: pointer;
     }
 
     .screenshot-caption {
