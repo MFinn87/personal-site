@@ -15,13 +15,13 @@
         "icon": "faImages"
     },
     {
-        "caption": "Contact Me",
-        "href": "/contact",
-        "icon": "faComment"
-    },
-    {
         "caption": "Resume",
         "href": "https://finnyg.com/assets/mike_finnegan_resume.pdf",
+        "icon": "faFile"
+    },
+    {
+        "caption": "Contact Me",
+        "href": "/contact",
         "icon": "faComment"
     }
 ]
