@@ -34,16 +34,13 @@ export default {
         }
     },
     mounted() {
-        this.$refs.lightbox.closeLightBox();
+        this.closeLightbox();
     },
     methods: {
         getImage(image) {
             return require(`@/${image}`);
         },
         showLightbox(image) {
-            console.log(image);
-            console.log(LightBox);
-
             this.media = [{
                     thumb: this.getImage(image.src),
                     src: this.getImage(image.src),
@@ -51,6 +48,10 @@ export default {
                     srcset: this.getImage(image.src) // Optional for displaying responsive images
             }];
             this.$refs.lightbox.showImage(0);
+        },
+        closeLightbox() {
+            this.media = [];
+            this.$refs.lightbox.closeLightBox();
         }
     }
 }
