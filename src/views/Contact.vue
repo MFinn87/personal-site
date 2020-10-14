@@ -99,7 +99,7 @@ export default {
         this.errors.push('Please leave a message.')
       }
       else {
-        return axios.post(process.env.VUE_APP_apiBaseUrl + '/message', {
+        return axios.post("https://ginaleeshin.com/api/message", {
           name: this.name,
           email: this.email,
           phone: this.phone,
