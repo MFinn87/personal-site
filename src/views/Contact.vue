@@ -144,16 +144,15 @@ export default {
     min-width: 175px;
     padding: 1em;
     margin-top: 3em;
-    color: white;
+    color: #222;
     letter-spacing: 2px;
     transition: .2s all ease-in-out;
-    border-bottom: 2px solid transparent;
     background-color: rgba(66, 185, 131, .8);
     -webkit-appearance: none;
   }
   input[type="submit"]:hover {
-    color: #222;
-	}
+    color: white;
+  }
   .size-inputs, textarea {
     padding: 12px;
     background-color: #ffffff;
