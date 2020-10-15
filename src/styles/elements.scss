@@ -1,0 +1,13 @@
+button {
+    border-bottom: 2px solid transparent;
+    background-color: rgba(66, 185, 131, .8);
+    color: #222;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    padding: 1em 2em 1em 2em;
+    margin-top: 3em;
+}
+
+button:hover {
+    color: white;
+}

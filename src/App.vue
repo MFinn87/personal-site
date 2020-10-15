@@ -21,6 +21,7 @@ export default {
 @import './styles/typography.scss';
 @import './styles/spacings.scss';
 @import './styles/responsive.scss';
+@import './styles/elements.scss';
 
 body {
     margin: 0px;

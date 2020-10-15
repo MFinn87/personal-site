@@ -22,10 +22,21 @@
             </p>
     -->
             <div class="next">
-                <h4><a href="/solutions">Explore solutions</a></h4>
+                <!-- <h4><a href="/solutions">Explore solutions</a></h4> -->
+                <button @click="goToExplore()">Explore solutions</button>
             </div>
         </div>
     </div>
 </template>
+<script>
+
+export default {
+    methods: {
+        goToExplore: function() {
+            this.$router.push('/solutions');
+        }
+    }
+}
+</script>
 <style>
 </style>

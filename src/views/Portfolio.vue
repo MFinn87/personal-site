@@ -14,7 +14,8 @@
             </div>
         </div>
         <div class="next">
-            <h4><a href="/contact">Let's work together</a></h4>
+            <!-- <h4><a href="/contact">Let's work together</a></h4> -->
+            <button @click="goToContact()">Let's work together</button>
         </div>
     </div>
 </template>
@@ -52,6 +53,9 @@ export default {
         closeLightbox() {
             this.media = [];
             this.$refs.lightbox.closeLightBox();
+        },
+        goToContact: function() {
+            this.$router.push('/contact');
         }
     }
 }
