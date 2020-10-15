@@ -3,7 +3,7 @@ import views from '../views/index.js';
 const routes = [
     {
       path: '/',
-      name: 'About',
+      name: 'Root',
       props: true,
       component: views.About,
       meta: {
