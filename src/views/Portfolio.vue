@@ -93,6 +93,6 @@ export default {
     }
 
     .vib-hidden {
-        opacity: 100%;
+        opacity: 100% !important;
     }
 </style>
