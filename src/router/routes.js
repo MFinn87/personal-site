@@ -7,7 +7,7 @@ const routes = [
       props: true,
       component: views.About,
       meta: {
-        title: 'Welcome!'
+        title: 'Mike Finnegan - About'
       }
     },
     {
@@ -16,7 +16,7 @@ const routes = [
       props: true,
       component: views.About,
       meta: {
-        title: 'Welcome!'
+        title: 'Mike Finnegan - About'
       }
     },
     {
@@ -25,7 +25,7 @@ const routes = [
       component: views.Contact,
       props: true,
       meta: {
-        title: 'Contact'
+        title: 'Mike Finnegan - Contact'
       }
     },
     {
@@ -34,7 +34,7 @@ const routes = [
       component: views.Portfolio,
       props: true,
       meta: {
-        title: 'Portfolio'
+        title: 'Mike Finnegan - Portfolio'
       }
     },
     {
@@ -43,7 +43,7 @@ const routes = [
       component: views.Solutions,
       props: true,
       meta: {
-        title: 'Solutions'
+        title: 'Mike Finnegan - Solutions'
       }
     }
 ];
