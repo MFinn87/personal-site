@@ -7,29 +7,16 @@
 <script>
 import HamburgerMenu from './HamburgerMenu.vue';
 import Navbar from './Navbar.vue';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import * as icons from '@fortawesome/free-solid-svg-icons';
 
 export default {
-  name: 'Menu',
-  props: {
-    menuOptions: Array
-  },
-  components: {
-    HamburgerMenu,
-    Navbar
-  },
-  methods: {
-    getIcon(name) {
-        library.add(icons[name]);
-        return icons[name];
+    name: 'Menu',
+    props: {
+        menuOptions: Array
+    },
+    components: {
+        HamburgerMenu,
+        Navbar
     }
-  },
-  data() {
-      return {
-          
-      }
-  }
 }
 </script>
 <style>

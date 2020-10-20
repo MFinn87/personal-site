@@ -3,30 +3,35 @@
         "id": 1,
         "caption": "Home",
         "href": "/",
+        "type": "view",
         "icon": "faHome"
     },
     {
         "id": 2,
         "caption": "Solutions",
         "href": "/solutions",
+        "type": "view",
         "icon": "faLightbulb"
     },
     {
         "id": 3,
         "caption": "Portfolio",
         "href": "/portfolio",
+        "type": "view",
         "icon": "faImages"
     },
     {
         "id": 4,
         "caption": "Resume",
         "href": "https://finnyg.com/assets/mike_finnegan_resume.pdf",
+        "type": "file",
         "icon": "faFile"
     },
     {
         "id": 5,
         "caption": "Contact Me",
         "href": "/contact",
+        "type": "view",
         "icon": "faComment"
     }
 ]

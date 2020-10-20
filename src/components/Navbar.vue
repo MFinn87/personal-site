@@ -1,6 +1,6 @@
 <template>
     <div class="navbar-container">
-        <a class="navbar-item" v-for="option in menuOptions" :href="option.href" :key="option.id"> 
+        <a class="navbar-item" v-for="option in menuOptions" @click="routeToMenuOption(option)" :key="option.id"> 
             {{option.caption}}
         </a>
     </div>
@@ -9,6 +9,16 @@
 export default {
     props: {
         menuOptions: Array
+    },
+    methods: {
+        routeToMenuOption: function(menuOption) {
+            if (menuOption.type === 'file') {
+                window.open(menuOption.href, "_blank")
+            }
+            else if (menuOption.type === 'view'){
+                this.$router.push(menuOption.href);
+            }
+        }
     }
 }
 </script>
@@ -33,5 +43,6 @@ export default {
 
     .navbar-item:hover {
         background-color: #303030;
+        cursor: pointer;
     }
 </style>
