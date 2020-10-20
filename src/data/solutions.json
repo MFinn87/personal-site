@@ -1,14 +1,30 @@
 [
-    "Web APIs",
-    "Websites",
-    "Desktop Applications",
-    "Custom Reporting (PDF, Excel, Charts)",
-    "Database Schema Design and Performance Tuning",
-    "Data Visualizations and Dashboards",
-    "Authentication/Authorization and User Management",
-    "Application Integrations",
-    "Batch Data Import, Export, and Transformation Jobs",
-    "Process Automation",
-    "Web Scraping",
-    "Hosting"
+    {
+        "id": 1,
+        "name": "websites",
+        "icon": "faGlobe",
+        "color": "#1010a0",
+        "description": "Websites of all kinds, from simple brochure sites to complex e-commerce and business systems."
+    },
+    {
+        "id": 2,
+        "name": "apps",
+        "icon": "faMobileAlt",
+        "color": "#303030",
+        "description": "Apps for any platform - mobile and desktop."
+    },
+    {
+        "id": 3,
+        "name": "data",
+        "icon": "faChartLine",
+        "color": "#00a005",
+        "description": "Dashboards, spreadsheets, pdf reports, data imports and exports, and more."
+    },
+    {
+        "id": 4,
+        "name": "backend",
+        "icon": "faCogs",
+        "color": "#a0a0a0",
+        "description": "Web APIs, database schema design, process automation, app integrations, web scraping, and hosting."
+    }
 ]

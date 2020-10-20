@@ -149,6 +149,7 @@ export default {
     transition: .2s all ease-in-out;
     background-color: rgba(66, 185, 131, .8);
     -webkit-appearance: none;
+    border-radius: 5px;
   }
   input[type="submit"]:hover {
     color: white;

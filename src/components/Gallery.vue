@@ -2,7 +2,7 @@
     <div>
         <LightBox :media="media" ref="lightbox" :show-caption="true" :show-thumbs="false" :auto-play="false" :auto-play-time="9999999"></LightBox>
         <div class="screenshot-grid">
-            <div v-for="(screenshot, index) in pictures" :key="index" class="screenshot-item">
+            <div v-for="(screenshot) in pictures" :key="screenshot.id" class="screenshot-item">
                 <img :alt="screenshot.description" class="screenshot-thumb" :src="getImage(screenshot.src)" height="240" v-on:click="showLightbox(screenshot)">
                 <p class="screenshot-caption">{{screenshot.caption}}</p>
             </div>

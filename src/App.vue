@@ -1,23 +1,29 @@
 <template>
   <div id="app">
-    <Menu />
+    <Menu :menuOptions="menuScreens" />
     <router-view id="router" />
   </div>
 </template>
 
 <script>
 import Menu from './components/Menu.vue';
-
+import menuScreens from './data/menu_screens.json';
 
 export default {
   name: 'App',
   components: {
     Menu
+  },
+  data() {
+    return {
+      menuScreens
+    }
   }
 }
 </script>
 
 <style>
+@import './styles/colors.scss';
 @import './styles/typography.scss';
 @import './styles/spacings.scss';
 @import './styles/responsive.scss';
@@ -29,9 +35,12 @@ body {
 }
 
 #app {
+  background-color: var(--background-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  height: 100%;
 }
 
 #router {

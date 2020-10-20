@@ -1,25 +1,30 @@
 [
     {
+        "id": 1,
         "caption": "Home",
         "href": "/",
         "icon": "faHome"
     },
     {
+        "id": 2,
         "caption": "Solutions",
         "href": "/solutions",
         "icon": "faLightbulb"
     },
     {
+        "id": 3,
         "caption": "Portfolio",
         "href": "/portfolio",
         "icon": "faImages"
     },
     {
+        "id": 4,
         "caption": "Resume",
         "href": "https://finnyg.com/assets/mike_finnegan_resume.pdf",
         "icon": "faFile"
     },
     {
+        "id": 5,
         "caption": "Contact Me",
         "href": "/contact",
         "icon": "faComment"

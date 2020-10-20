@@ -8,7 +8,6 @@
         </div>
         <Gallery :pictures="portfolioData" />
         <div class="next">
-            <!-- <h4><a href="/contact">Let's work together</a></h4> -->
             <button @click="goToContact()">Let's work together</button>
         </div>
     </div>
