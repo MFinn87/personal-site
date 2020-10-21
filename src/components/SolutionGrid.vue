@@ -40,7 +40,6 @@ export default {
 
     .desktop-grid {
         display: grid;
-        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
         grid-template-columns: repeat(auto-fit, minmax(140px, 1.25fr));
         justify-content: center;
         grid-gap: 10px;
