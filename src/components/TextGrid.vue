@@ -19,15 +19,5 @@ export default {
 }
 </script>
 <style>
-    .grid-wrapper {
-        margin-top: 40px;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        grid-gap: 10px;
-        background-color: #fff;
-        margin-top: 2em;
-    }
+    
 </style>
