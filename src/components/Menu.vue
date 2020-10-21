@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
-        <HamburgerMenu :menuOptions="menuOptions" class="mobile-only" />
-        <Navbar :menuOptions="menuOptions" class="desktop-only" />
+        <HamburgerMenu :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" class="mobile-only" />
+        <Navbar :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" class="desktop-only" />
     </div>
 </template>
 <script>
@@ -12,6 +12,16 @@ export default {
     name: 'Menu',
     props: {
         menuOptions: Array
+    },
+    methods: {
+        routeToMenuOption: function(menuOption) {
+            if (menuOption.type === 'file') {
+                window.open(menuOption.href, "_blank")
+            }
+            else if (menuOption.type === 'view'){
+                this.$router.push(menuOption.href);
+            }
+        }
     },
     components: {
         HamburgerMenu,

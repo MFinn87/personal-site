@@ -1,7 +1,7 @@
 <template>
-    <Slide right>
-        <a v-for="option in menuOptions" :href="option.href" :key="option.id"> 
-            <span><font-awesome-icon class="icon" :icon="getIcon(option.icon)" size="1x" inverse/>  {{option.caption}}</span>
+    <Slide right :closeOnNavigation="true">
+        <a v-for="option in menuOptions" @click="onHamburgerMenuOptionClick(option)" :key="option.id"> 
+            <span class="menu-option"><font-awesome-icon class="icon" :icon="getIcon(option.icon)" size="1x" inverse/>  {{option.caption}}</span>
         </a>
     </Slide>
 </template>
@@ -16,9 +16,13 @@ export default {
     Slide,
   },
   props: {
-    menuOptions: Array
+    menuOptions: Array,
+    onMenuOptionClick: Function
   },
   methods: {
+    onHamburgerMenuOptionClick(menuOption) {
+      this.onMenuOptionClick(menuOption);
+    },
     getIcon(name) {
         library.add(icons[name]);
         return icons[name];
@@ -30,5 +34,9 @@ export default {
 <style>
     .icon {
         min-width: 30px;
+    }
+
+    .menu-option {
+        cursor: pointer;
     }
 </style>

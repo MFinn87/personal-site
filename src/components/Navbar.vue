@@ -1,6 +1,6 @@
 <template>
     <div class="navbar-container">
-        <a class="navbar-item" v-for="option in menuOptions" @click="routeToMenuOption(option)" :key="option.id"> 
+        <a class="navbar-item" v-for="option in menuOptions" @click="onMenuOptionClick(option)" :key="option.id"> 
             {{option.caption}}
         </a>
     </div>
@@ -8,17 +8,8 @@
 <script>
 export default {
     props: {
-        menuOptions: Array
-    },
-    methods: {
-        routeToMenuOption: function(menuOption) {
-            if (menuOption.type === 'file') {
-                window.open(menuOption.href, "_blank")
-            }
-            else if (menuOption.type === 'view'){
-                this.$router.push(menuOption.href);
-            }
-        }
+        menuOptions: Array,
+        onMenuOptionClick: Function
     }
 }
 </script>
