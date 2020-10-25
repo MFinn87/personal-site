@@ -12,13 +12,14 @@
                 @onGalleryItemClick="showLightbox"
             />
         </div>
-        <LightBox :media="media" ref="lightbox" :show-caption="true" :show-thumbs="false" :auto-play="false" interface-hide-time="999999"></LightBox>
+        <LightBox :media="media" ref="lightbox" :show-caption="true" :show-thumbs="false" :auto-play="false" :interface-hide-time="lightboxHideDelay"></LightBox>
     </div>
 </template>
 <script>
 import LightBox from 'vue-it-bigger';
 import GalleryItem from './GalleryItem.vue';
 import utils from '../utils/index.js';
+
 const { getImage } = utils;
 
 export default {
@@ -28,7 +29,8 @@ export default {
         GalleryItem
     },
     props: {
-        pictures: Array
+        pictures: Array,
+        lightboxHideDelay: Number
     },
     data() {
         return {
@@ -45,13 +47,13 @@ export default {
             }];
             this.$refs.lightbox.showImage(0);
         },
-        closeLightbox() {
+        initializeLightbox() {
             this.media = [];
             this.$refs.lightbox.closeLightBox();
         }
     },
     mounted() {
-        this.closeLightbox();
+        this.initializeLightbox();
     }
 }
 </script>

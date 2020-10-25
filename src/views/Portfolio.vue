@@ -6,7 +6,7 @@
             </h3>
             <hr>
         </div>
-        <Gallery :pictures="portfolioData" />
+        <Gallery :pictures="portfolioData" :lightboxHideDelay="99999999" />
         <div class="next">
             <button @click="goToContact()">Let's work together</button>
         </div>
