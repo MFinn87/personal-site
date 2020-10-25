@@ -1,7 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <Menu :menuOptions="menuScreens" />
+    <transition
+        name="fade"
+        mode="out-in"
+    >
     <router-view id="router" />
+    </transition>
   </div>
 </template>
 
@@ -28,6 +33,7 @@ export default {
 @import './styles/spacings.scss';
 @import './styles/responsive.scss';
 @import './styles/elements.scss';
+@import './styles/transitions.scss';
 
 body {
     margin: 0px;
