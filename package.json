@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "cross-env NODE_ENV=production webpack --progress",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -13,7 +13,6 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
-    "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.6.11",
     "vue-burger-menu": "^2.0.5",
     "vue-it-bigger": "^0.1.1",
@@ -26,9 +25,14 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^5.2.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "prerender-spa-plugin": "^3.4.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
   },
   "eslintConfig": {
     "root": true,
