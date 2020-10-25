@@ -5,7 +5,7 @@
         name="fade"
         mode="out-in"
     >
-    <router-view id="router" />
+      <router-view id="router" />
     </transition>
   </div>
 </template>
