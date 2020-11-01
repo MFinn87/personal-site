@@ -3,7 +3,8 @@
         <div class="text-segment">
             <h3>What Can I Do For Your Business?
             </h3>
-            <hr>
+        </div>
+        <div>
             <p>
                 I've launched several successful SaaS products and developed custom software for clients in the marketing, manufacturing, food/beverage, and pharmaceutical verticals. I've developed, extended, and maintained complex ERP, CRM, and Inventory Management systems.
             </p>

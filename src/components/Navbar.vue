@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-container">
-        <a class="navbar-item" v-for="option in menuOptions" @click="onMenuOptionClick(option)" :key="option.id"> 
-            {{option.caption}}
+        <a v-for="option in menuOptions" @click="onMenuOptionClick(option)" :key="option.id"> 
+            <span class="navbar-item">{{option.caption}}</span>
         </a>
     </div>
 </template>
@@ -18,10 +18,12 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         background-color: #101010;
         height: 3em;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .navbar-item {
@@ -29,11 +31,12 @@ export default {
         color: #fafafa;
         font-weight: 800;
         width: 300px;
-        text-align: center;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        cursor: pointer;
     }
 
     .navbar-item:hover {
-        background-color: #303030;
-        cursor: pointer;
+        /* background-color: #303030; */
     }
 </style>

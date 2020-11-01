@@ -4,7 +4,6 @@
             <h3>
                 Portfolio
             </h3>
-            <hr>
         </div>
         <Gallery :pictures="portfolioData" :lightboxHideDelay="99999999" />
         <div class="next">
