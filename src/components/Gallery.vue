@@ -60,22 +60,35 @@ export default {
 <style>
 @import '../../node_modules/vue-it-bigger/dist/vue-it-bigger.min.css';
 
-.gallery-grid {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 30px;
-    margin-top: 2em;
+@media only screen and (min-width: 1436px) {
+    .gallery-grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr) minmax(240px, 1fr) minmax(240px, 1fr);
+        grid-gap: 4em;
+    }
+}
+
+@media screen and (max-width: 1435px) {
+    .gallery-grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 4em;
+    }
 }
 
 .gallery-grid-item {
     color: #121212;
     border-radius: 5px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
     text-align: center;
+}
+
+.vib-footer, .vib-close {
+    background: rgba(0,0,0,.7);
 }
 </style>

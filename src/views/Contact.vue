@@ -3,7 +3,6 @@
     <div class="text-segment">
         <h3>Let's get in touch! Leave me your info and a message, and I will get back to you ASAP.
         </h3>
-        <hr>
     </div>
     <div class="center">
         <form
@@ -53,10 +52,14 @@
             name="message"
         />
 
-        <input
-            type="submit"
-            value="Send Message"
-        >
+        <div class="submit-button">
+            <button
+                type="submit"
+                value="Submit"
+            >
+                Send message
+            </button>
+        </div>
 
         </form>
     </div>
@@ -121,51 +124,47 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   form {
     display: flex;
     flex-direction: column;
     width: 100%
   }
+  
   label {
     margin-top: 2em;
     font-size: 1.2em;
     font-weight: 500;
     /* color: #94aab0; */
   }
+  
   input, textarea {
     border: 1px solid #cfd9db;
     border-radius: 0.25em;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
     resize: none;
   }
-  input[type="submit"] {
-    width: 20%;
-    min-width: 175px;
-    padding: 1em;
-    margin-top: 3em;
-    color: #222;
-    letter-spacing: 2px;
-    transition: .2s all ease-in-out;
-    background-color: rgba(66, 185, 131, .8);
-    -webkit-appearance: none;
-    border-radius: 5px;
-  }
-  input[type="submit"]:hover {
-    color: white;
-  }
+
   .size-inputs, textarea {
     padding: 12px;
     background-color: #ffffff;
   }
+  
   textarea {
     height: 6em;
   }
+  
   .center {
     display: flex;
     justify-content: center;
   }
+  
   .alert {
     color: red;
   }
+
+  .submit-button {
+      text-align: right;
+  }
+
 </style>
