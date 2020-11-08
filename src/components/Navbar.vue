@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-container">
         <a v-for="option in menuOptions" @click="onMenuOptionClick(option)" :key="option.id"> 
-            <span class="navbar-item">{{option.caption}}</span>
+            <span class="navbar-item">{{option.caption.toUpperCase()}}</span>
         </a>
     </div>
 </template>
@@ -18,22 +18,21 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-        background-color: #101010;
         height: 3em;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        padding-top: var(--navbar-height);
+        padding-left: 5vw;
+        padding-right: calc(5vw - 1.5em);
+        opacity: 100%;
+        background-color: inherit;
     }
 
     .navbar-item {
         text-decoration: none;
-        color: #fafafa;
-        font-weight: 800;
-        width: 300px;
-        padding-top: .5em;
-        padding-bottom: .5em;
         cursor: pointer;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
     }
 
     .navbar-item:hover {

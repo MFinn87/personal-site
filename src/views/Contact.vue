@@ -52,12 +52,12 @@
             name="message"
         />
 
-        <div class="submit-button">
+        <div class="submit-button next">
             <button
                 type="submit"
                 value="Submit"
             >
-                Send message
+                SEND
             </button>
         </div>
 

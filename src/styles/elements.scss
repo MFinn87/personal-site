@@ -1,13 +1,12 @@
 button {
-    background-color: var(--seafoam-green);
+    background-color: var(--green);
     color: #222;
     letter-spacing: 2px;
     transition: .2s all ease-in-out;
     padding: 1em 2em 1em 2em;
-    margin-top: 3em;
     border: none;
+    outline: none;
     /* border-radius: 5px; */
-    font-family: 'Helvetica', sans-serif;
 }
 
 button:hover {

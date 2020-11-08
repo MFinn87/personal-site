@@ -1,18 +1,18 @@
 <template>
     <div>
         <div class="center-vertically">
-            <h2>
-                Mike Finnegan
-            </h2>
-            <h4>
-                Full-Stack Software Engineer
-            </h4>
-            <h4>
-                Boulder / Denver
-            </h4>
+            <h5>
+                <strong>FULL-STACK SOFTWARE ENGINEER</strong>
+            </h5>
+            <h1>
+                MIKE FINNEGAN
+            </h1>
             <div class="next">
-                <button @click="goToExplore()">Explore solutions</button>
+                <button @click="goToExplore()">EXPLORE</button>
             </div>
+            <h6>
+                Boulder / Denver
+            </h6>
         </div>
     </div>
 </template>

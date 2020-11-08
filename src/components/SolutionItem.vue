@@ -39,7 +39,7 @@ export default {
 
 
     .grid-item {
-        color: #121212;
+        /* color: #121212; */
         border-radius: 5px;
         padding: 20px;
         text-align: center;

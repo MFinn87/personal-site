@@ -1,7 +1,7 @@
 <template>
     <div class="menu">
         <HamburgerMenu :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" class="mobile-only" />
-        <Navbar :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" class="desktop-only" />
+        <Navbar :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" :style="navbarStyle" class="desktop-only" />
     </div>
 </template>
 <script>
@@ -11,7 +11,8 @@ import Navbar from './Navbar.vue';
 export default {
     name: 'Menu',
     props: {
-        menuOptions: Array
+        menuOptions: Array,
+        navbarStyle: String
     },
     methods: {
         routeToMenuOption: function(menuOption) {

@@ -1,6 +1,6 @@
 <template>
   <div id="app" >
-    <Menu :menuOptions="menuScreens" />
+    <Menu :menuOptions="menuScreens" :navbarStyle="''" />
       <router-view id="router" />
   </div>
 </template>
@@ -41,12 +41,14 @@ body {
   text-rendering: optimizeLegibility;
   min-height: 100vh;
   height: 100%;
+  background-color: #252729;
+  color: #eee;
 }
 
 #router {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 </style>

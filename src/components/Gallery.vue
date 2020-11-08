@@ -79,7 +79,7 @@ export default {
 }
 
 .gallery-grid-item {
-    color: #121212;
+    /* color: #121212; */
     border-radius: 5px;
     display: flex;
     flex-direction: column;

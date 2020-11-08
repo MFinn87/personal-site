@@ -2,12 +2,12 @@
     <div>
         <div class="text-segment">
             <h3>
-                Portfolio
+                PORTFOLIO
             </h3>
         </div>
         <Gallery :pictures="portfolioData" :lightboxHideDelay="99999999" />
         <div class="next">
-            <button @click="goToContact()">Let's work together</button>
+            <button @click="goToContact()">CONTACT</button>
         </div>
     </div>
 </template>
