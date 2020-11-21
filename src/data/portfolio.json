@@ -20,7 +20,7 @@
     {
         "id": 4,
         "caption": "Sales Lead Assignment",
-        "description": "This is a screen that lets users assign the most appropriate sales rep, to each sales lead. In short, users want to assign the best available sales rep to the most lucrative leads, and this ui makes it easy to do so.",
+        "description": "This screen lets users assign the most appropriate sales rep, to each sales lead. This screen allows users to consider availability, sales rep past performance, and geographic location when matching a rep to a lead.",
         "src": "assets/slo_lead_assignment_notes.png"
     },
     {
