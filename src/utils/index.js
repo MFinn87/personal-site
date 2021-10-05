@@ -1,5 +1,5 @@
 export default {
-    getImage(image) {
-        return require(`@/${image}`);
-    }
+  getImage(image) {
+    return require(`@/${image}`);
+  }
 }

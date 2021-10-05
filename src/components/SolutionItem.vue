@@ -1,33 +1,26 @@
 <template>
-    <div class="grid-item">
-        <font-awesome-icon class="icon" v-bind:style="{ color: solution.color }" :icon="getIcon(solution.icon)" size="3x"/>
-        <p>
-            {{solution.description}}
-        </p>
-    </div>
+  <div class="grid-item">
+    <img class="grid-item__image" :src="getImage(solution.imagePath)"/>
+    <p class="grid-item__paragraph">
+      {{solution.description}}
+    </p>
+  </div>
 </template>
 <script>
-import { library } from '@fortawesome/fontawesome-svg-core';
-import * as icons from '@fortawesome/free-solid-svg-icons';
+import utils from '../utils/index.js';
+const { getImage } = utils;
 
 export default {
-    props: {
-        solution: Object
-    },
-    methods: {
-        getIcon(name) {
-            if (name) {
-                library.add(icons[name]);
-                return icons[name];
-            }
-            else {
-                return "";
-            }
-        }
-    }
+  props: {
+    solution: Object
+  },
+  methods: {
+    getImage
+  }
 }
 </script>
-<style>
+<style lang="scss">
+
 /*
 1) No sharp corners on anything
 2) Layer the elements, from dark to light. So, create a gradient where you add the lightest items to the front.
@@ -36,12 +29,20 @@ export default {
 3) The grid items faces should be lighter than the background colors.
 4) Slight linear-gradient on button faces n stuff.
 */
+  .grid-item {
+    /* color: #121212; */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
 
-
-    .grid-item {
-        /* color: #121212; */
-        border-radius: 5px;
-        padding: 20px;
-        text-align: center;
+    .grid-item__image {
+      height: 75px;
+      object-fit: scale-down;
+      margin-bottom: 2em;
     }
+
+    .grid-item__paragraph {
+      font-size: .9em;
+    }
+  }
 </style>

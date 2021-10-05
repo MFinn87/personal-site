@@ -1,19 +1,24 @@
-@media only screen and (min-width: 901px) {
-    .mobile-only {
-        display: none;
-    };
+/*
+  https://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries/14168210#14168210
+  https://www.codegrepper.com/code-examples/css/mobile+only+css
+*/
 
-    .desktop-only {
-        display: initial;
-    };
+@media screen and (min-width: 861px) {
+  .mobile-only {
+    display: none !important;
+  };
+
+  .desktop-only {
+    /* display: initial !important; */
+  };
 };
 
-@media screen and (max-width: 900px) {
-    .desktop-only {
-        display: none;
-    };
+@media only screen and (max-width: 860px) {
+  .desktop-only {
+    display: none !important;
+  };
 
-    .mobile-only {
-        display: initial;
-    }
+  .mobile-only {
+    /* display: initial !important; */
+  }
 }

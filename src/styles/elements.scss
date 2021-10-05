@@ -1,14 +1,18 @@
+body {
+  background-color: var(--background-black);
+}
+
 button {
-    background-color: var(--green);
-    color: #222;
-    letter-spacing: 2px;
-    transition: .2s all ease-in-out;
-    padding: 1em 2em 1em 2em;
-    border: none;
-    outline: none;
-    /* border-radius: 5px; */
+  background-color: var(--green);
+  color: var(--background-black);
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  padding: .5em 2em .5em 2em;
+  border: none;
+  outline: none;
+  /* border-radius: 5px; */
 }
 
 button:hover {
-    color: white;
+  color: white;
 }
