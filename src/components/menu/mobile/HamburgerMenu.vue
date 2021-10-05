@@ -53,14 +53,14 @@ export default {
 
   /* Burger menu when closed */
   .bm-burger-bars {
-    background-color: var(--white);
-    height: 3px;
+    background-color: var(--white) !important;
+    height: 3px !important;
   }
 
   /* Burger menu when closed */
   .bm-burger-button {
-    left: calc(100% - 36px);
-    top: calc(19px + 1em);
+    left: calc(100% - 36px) !important;
+    top: calc(19px + 1em) !important;
   }
 
   .icon {
