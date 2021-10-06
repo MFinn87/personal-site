@@ -25,8 +25,8 @@
     </div>
     <SolutionGrid :items="solutions">
     </SolutionGrid>
-    <div class="next-desktop">
-      <button @click="goToPortfolio()">PORTFOLIO</button>
+    <div class="next-desktop-center">
+      <button class="mobile-full-width" @click="goToPortfolio()">PORTFOLIO</button>
     </div>
   </div>
 </template>

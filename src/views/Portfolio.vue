@@ -6,8 +6,8 @@
       </h3>
     </div>
     <Gallery :pictures="portfolioData" />
-    <div class="next-desktop">
-      <button @click="goToContact()">CONTACT</button>
+    <div class="next-desktop-center">
+      <button class="mobile-full-width" @click="goToContact()">CONTACT</button>
     </div>
   </div>
 </template>

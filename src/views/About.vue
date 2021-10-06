@@ -9,7 +9,7 @@
       </h1>
       <div class="negative-space-row">
       </div>
-      <div class="next-desktop">
+      <div class="next-desktop-right">
         <button @click="goToExplore()">EXPLORE</button>
       </div>
       <h6>

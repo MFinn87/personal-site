@@ -32,11 +32,6 @@ export default {
     flex-wrap: nowrap;
     align-items: center;
     height: 4em;
-    /* padding-top: calc(var(--navbar-height) - 48px); */ /* TODO: Why is this here? */
-    /*
-    padding-left: 5vw;
-    padding-right: calc(5vw - 1.5em);
-    */
   }
 
   .navbar-item {

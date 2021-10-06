@@ -76,10 +76,11 @@
           placeholder="MESSAGE"
         />
 
-        <div class="submit-button next-desktop">
+        <div class="submit-button next-desktop-center">
           <button
             type="submit"
             value="Submit"
+            class="full-width"
           >
             SEND
           </button>
@@ -244,10 +245,6 @@ export default {
     
     .alert {
       color: red;
-    }
-
-    .submit-button {
-      text-align: right;
     }
   }
 </style>
