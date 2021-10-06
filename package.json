@@ -11,11 +11,8 @@
     "axios": "^0.21.4",
     "core-js": "^3.6.5",
     "vue": "^3.0.7",
-    "vue-it-bigger": "^0.1.1",
-    "vue-navigation-bar": "^4.0.2",
     "vue-router": "^4.0.5",
-    "vue3-burger-menu": "^1.1.1",
-    "vuex": "^3.6.2"
+    "vue3-burger-menu": "^1.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

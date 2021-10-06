@@ -1,7 +1,7 @@
 <template>
-  <div class="fancy-gallery-item" @click="onClick">
+  <div class="fancy-gallery-item">
     <div v-if="orientation === 'left'" class="fancy-gallery-item-left">
-      <img :alt="imageAlt" class="fancy-gallery-item-thumb" height="520" :src="getImage(imageSource)">
+      <img @click="onImageClick" :alt="imageAlt" class="fancy-gallery-item-thumb" height="520" :src="getImage(imageSource)">
       <div class="fancy-gallery-item-text">
         <h3>{{caption}}</h3>
         <p><strong>{{description}}</strong></p>
@@ -16,12 +16,13 @@
         <h3>{{caption}}</h3>
         <p><strong>{{description}}</strong></p>
       </div>
-      <img :alt="imageAlt" class="fancy-gallery-item-thumb" height="520" :src="getImage(imageSource)">
+      <img @click="onImageClick" :alt="imageAlt" class="fancy-gallery-item-thumb" height="520" :src="getImage(imageSource)">
     </div>
   </div>
 </template>
 <script>
 import utils from '../../../utils/index.js';
+
 const { getImage } = utils;
 
 export default {
@@ -35,7 +36,7 @@ export default {
   },
   methods: {
     getImage,
-    onClick() {
+    onImageClick() {
       this.$emit('onGalleryItemClick', {
         src: this.imageSource,
         description: this.description,
@@ -49,6 +50,10 @@ export default {
 <style lang="scss">
   .fancy-gallery-item {
     margin-bottom: 4em;
+
+    img {
+      cursor: pointer;
+    }
 
     h3, h4 {
       color: var(--white);

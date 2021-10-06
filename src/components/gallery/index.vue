@@ -1,21 +1,46 @@
 <template>
   <div>
-    <FancyGallery class="desktop-only" :pictures="pictures" />
-    <SimpleGallery class="mobile-only" :pictures="pictures" />
+    <LightBox @onLightBoxExit="closeLightBox" :source="lightBoxImageSrc" v-if="isLightBoxOpen" />
+    <FancyGallery class="desktop-only" :pictures="pictures" @onGalleryItemClick="openLightBox"/>
+    <SimpleGallery class="mobile-only" :pictures="pictures" @onGalleryItemClick="openLightBox"/>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+import LightBox from '../lightbox/LightBox.vue';
 import SimpleGallery from './simple/Gallery.vue';
 import FancyGallery from './fancy/Gallery.vue';
+import utils from '../../utils/index.js';
+
+const { getImage } = utils;
 
 export default {
   components: {
     FancyGallery,
+    LightBox,
     SimpleGallery
   },
   props: {
     pictures: Array,
   },
+  setup() {
+    const isLightBoxOpen = ref(false);
+    const lightBoxImageSrc = ref('');
+
+    return {
+      lightBoxImageSrc,
+      isLightBoxOpen
+    };
+  },
+  methods: {
+    openLightBox(image) {
+      this.lightBoxImageSrc = getImage(image.src);
+      this.isLightBoxOpen = true;
+    },
+    closeLightBox() {
+      this.isLightBoxOpen = false
+    },
+  }
 }
 </script>
