@@ -1,6 +1,6 @@
 <template>
   <div class="simple-gallery-item" @click="onClick">
-    <img :alt="imageAlt" class="simple-gallery-item-thumb" height="240" :src="getImage(imageSource)">
+    <img @click="onImageClick" :alt="imageAlt" class="simple-gallery-item-thumb" height="240" :src="getImage(imageSource)">
     <h6 class="simple-gallery-item-caption">{{caption.toUpperCase()}}</h6>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     getImage,
-    onClick() {
+    onImageClick() {
       this.$emit('onGalleryItemClick', {
         src: this.imageSource,
         description: this.description,
