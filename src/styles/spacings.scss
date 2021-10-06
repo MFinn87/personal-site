@@ -1,25 +1,26 @@
+:root{
+  --navbar-height: 100px;
+}
+
 .text-segment {
-    margin-top: 4em;
-    margin-bottom: 2em;
+  margin-top: 4em;
+  margin-bottom: 2em;
 }
 
-.center-vertically {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100vh - 180px);
+.next-desktop {
+  margin-top: 3em;
+  text-align: right;
 }
 
-.wide-80 {
-    width: 80vw;
+.next-mobile {
+  margin-top: 3em;
+  text-align: center;
 }
 
-.center-horizontally {
-    text-align: center;
+.negative-space-row {
+  height: 4em;
 }
 
-.next {
-    margin-top: 3em;
-    text-align: right;
+.negative-space-column {
+  width: 2em;
 }
-

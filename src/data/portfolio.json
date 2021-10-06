@@ -3,48 +3,48 @@
         "id": 1,
         "caption": "Sales Results Dashboard",
         "description": "This is a dashboard screen that allows users to see, at a high level, what sales occurred, and in what markets.",
-        "src": "assets/slo_dashboard.png"
+        "src": "assets/screenshots/slo_dashboard.png"
     },
     {
         "id": 2,
         "caption": "Sales Lead Analysis",
         "description": "This is a dashboard screen that allows users to analyze sales results, grouped by marketing campaign.",
-        "src": "assets/analysis1.png"
+        "src": "assets/screenshots/analysis1.png"
     },
     {
         "id": 3,
         "caption": "Sales Results Filtering",
         "description": "This is a dashboard screen that allows users to analyze sales results by filtering on demographics, date ranges, markets, and more.",
-        "src": "assets/analysis2.png"
+        "src": "assets/screenshots/analysis2.png"
     },
     {
         "id": 4,
         "caption": "Sales Lead Assignment",
-        "description": "This screen lets users assign the most appropriate sales rep, to each sales lead. This screen allows users to consider availability, sales rep past performance, and geographic location when matching a rep to a lead.",
-        "src": "assets/slo_lead_assignment_notes.png"
+        "description": "This is a screen that lets users assign the most appropriate sales rep, to each sales lead. In short, users want to assign the best available sales rep to the most lucrative leads, and this ui makes it easy to do so.",
+        "src": "assets/screenshots/slo_lead_assignment_notes.png"
     },
     {
         "id": 5,
         "caption": "Warehouse Managment Home Screen",
         "description": "This is the home screen to a warehouse management mobile application I helped develop. Users can scan items on a mobile device to send and receive shipments.",
-        "src": "assets/wms_mobile_home.png"
+        "src": "assets/screenshots/wms_mobile_home.png"
     },
     {
         "id": 6,
         "caption": "Warehouse Management Picking Screen",
         "description": "This is a warehouse management mobile app screen, that allows users to reserve and move the appropriate inventory for shipments.",
-        "src": "assets/picking_inventory.png"
+        "src": "assets/screenshots/picking_inventory.png"
     },
     {
         "id": 7,
         "caption": "Warehouse Management Receiving Screen",
         "description": "This is a warehouse management desktop app screen. This screen allows users to enter in information about a truckload of inventory to be received.",
-        "src": "assets/receiving_load_main.png"
+        "src": "assets/screenshots/receiving_load_main.png"
     },
     {
         "id": 8,
         "caption": "Warehouse Management Receiving Media Screen",
         "description": "This is a warehouse management desktop app screen. This screen allows users to upload pictures, videos, or other media, pertaining to a truck dropping off new inventory. Media can be selected via system file explorer or by dragging and dropping from the user's computer.",
-        "src": "assets/receiving_load_media.png"
+        "src": "assets/screenshots/receiving_load_media.png"
     }
 ]
