@@ -155,14 +155,17 @@ export default {
     flex-direction: row;
     width: 100%;
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 860px) {
       flex-direction: column;
     }
 
     .contact-left {
       display: flex;
       flex-direction: column;
-      flex: 1;
+
+      @media screen and (min-width: 861px) {
+        flex: 1;
+      }
 
       .contact-left-title {
         margin-right: 2em;
