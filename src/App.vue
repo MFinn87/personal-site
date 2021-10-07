@@ -45,20 +45,15 @@ body {
   min-height: 100%;
   background-color: var(--background-black);
   color: var(--white);
-  /*
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-right: env(safe-area-inset-right, 3em);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-    padding-left: env(safe-area-inset-left, 3em);
-  */
-  padding-left: 3em;
-  padding-right: 3em;
   display: flex;
   flex-direction: column;
 }
 
 #router {
-  flex-grow: 1;
+  flex: 1;
+  max-width: calc(100% - 6em);
+  padding-left: 3em;
+  padding-right: 3em;
   padding-top: 3em;
   padding-bottom: 2em;
 }

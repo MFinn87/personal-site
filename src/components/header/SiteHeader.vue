@@ -51,6 +51,8 @@ export default {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    padding-left: 3em;
+    padding-right: 3em;
     background-color: var(--background-black);
 
     .site-header-logo {
