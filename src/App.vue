@@ -43,7 +43,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   min-height: 100%;
-  height: 100%;
   background-color: var(--background-black);
   color: var(--white);
   /*
