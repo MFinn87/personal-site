@@ -1,6 +1,12 @@
 <template>
   <div class="simple-gallery-item" @click="onClick">
-    <img @click="onImageClick" :alt="imageAlt" class="simple-gallery-item-thumb" height="240" :src="getImage(imageSource)">
+    <img
+      @click="onImageClick"
+      :alt="imageAlt"
+      :src="getImage(imageSource)"
+      height="240"
+      class="simple-gallery-item-thumb"
+    >
     <h6 class="simple-gallery-item-caption">{{caption.toUpperCase()}}</h6>
   </div>
 </template>

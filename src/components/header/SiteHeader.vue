@@ -1,8 +1,27 @@
 <template>
   <div class="site-header">
-      <img @click="goHome()" class="site-header-logo desktop-only" :src="getImage(logo)" width="63" height="38.2">
-      <div v-if="isOnHomeScreen()" class="site-header__mobile-placeholder mobile-only"></div>
-      <img @click="goHome()" v-if="!isOnHomeScreen()" class="site-header-logo mobile-only" :src="getImage(logo)" width="63" height="38.2">
+      <img
+        @click="goHome()"
+        :src="getImage(logo)"
+        width="63"
+        height="38.2"
+        alt="logo"
+        class="site-header-logo desktop-only"
+      >
+      <div
+        v-if="isOnHomeScreen()"
+        class="site-header__mobile-placeholder mobile-only"
+      >
+      </div>
+      <img
+        @click="goHome()"
+        v-if="!isOnHomeScreen()"
+        :src="getImage(logo)"
+        width="63"
+        height="38.2"
+        alt="logo"
+        class="site-header-logo mobile-only"
+      >
     <div>
       <Menu :menuOptions="menuScreens" :navbarStyle="''" class="menu" />
     </div>
