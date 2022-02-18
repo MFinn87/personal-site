@@ -46,7 +46,16 @@ const routes = [
     meta: {
       title: 'Mike Finnegan - Solutions'
     }
-  }
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: 'Otherwise',
+    props: true,
+    component: About,
+    meta: {
+      title: 'Mike Finnegan - About'
+    }
+  },
 ];
 
 export default routes;
