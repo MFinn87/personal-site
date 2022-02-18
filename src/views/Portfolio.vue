@@ -33,6 +33,8 @@ export default {
 </script>
 <style lang="scss">
   .portfolio {
+    width: 100%;
+
     .portfolio-header {
       margin-bottom: 2em;
     }
