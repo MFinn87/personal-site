@@ -52,13 +52,11 @@ export default {
 </script>
 <style lang="scss">
   .solutions {
-    height: 100%;
-    width: 100%;
-
     .solutions-text {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
+      width: 100%;
 
       .solutions-text-question {
         flex: 6;

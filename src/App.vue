@@ -4,7 +4,9 @@
       :menuScreens="menuScreens"
       logo="assets/logos/logo2.svg"
     />
-    <router-view id="router" />
+    <div class="router-container">
+      <router-view id="router" />
+    </div>
   </div>
 </template>
 
@@ -49,18 +51,29 @@ body {
   flex-direction: column;
 }
 
-#router {
-  flex: 1;
-  max-width: calc(100% - 6em);
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-top: 3em;
-  padding-bottom: 2em;
-}
-
 .app-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  align-items: stretch;
+
+  padding-left: 3em;
+  padding-right: 3em;
+
+  .router-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+    padding-top: 3em;
+    padding-bottom: 2em;
+
+    #router {
+      flex-grow: 1;
+      /* max-width: 2200px; */
+    }
+  }
 }
+
 </style>

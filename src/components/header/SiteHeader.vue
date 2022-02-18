@@ -1,6 +1,7 @@
 <template>
   <div class="site-header">
       <img @click="goHome()" class="site-header-logo desktop-only" :src="getImage(logo)" width="63" height="38.2">
+      <div v-if="isOnHomeScreen()" class="site-header__mobile-placeholder mobile-only"></div>
       <img @click="goHome()" v-if="!isOnHomeScreen()" class="site-header-logo mobile-only" :src="getImage(logo)" width="63" height="38.2">
     <div>
       <Menu :menuOptions="menuScreens" :navbarStyle="''" class="menu" />
@@ -51,9 +52,12 @@ export default {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    padding-left: 3em;
-    padding-right: 3em;
     background-color: var(--background-black);
+
+    .site-header__mobile-placeholder {
+      height: 38.2px;
+      width: 63px;
+    }
 
     .site-header-logo {
       margin-top: 2em;
