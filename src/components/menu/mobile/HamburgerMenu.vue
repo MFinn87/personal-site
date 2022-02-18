@@ -1,8 +1,13 @@
 <template>
   <Slide class="hamburger-menu" right :closeOnNavigation="true">
-    <div v-for="option in menuOptions" :key="option.id" @click="onHamburgerMenuOptionClick(option)" class="menu-option"> 
+    <a
+      v-for="option in menuOptions"
+      :href="option.href"
+      :target="getAnchorTarget(option)"
+      :key="option.id"
+      class="menu-option">
       {{ option.caption.toUpperCase() }}
-    </div>
+    </a>
   </Slide>
 </template>
 <script>
@@ -15,11 +20,12 @@ export default {
   },
   props: {
     menuOptions: Array,
-    onMenuOptionClick: Function
   },
   methods: {
-    onHamburgerMenuOptionClick(menuOption) {
-      this.onMenuOptionClick(menuOption);
+    getAnchorTarget(menuOption) {
+      return (menuOption.type === 'view')
+        ? '_self'
+        : '_blank'
     }
   }
 }

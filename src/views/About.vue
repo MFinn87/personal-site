@@ -17,7 +17,7 @@
       </h6>
     </div>
     <div class="about-mobile mobile-only">
-      <img src="../assets/logos/logo2.svg"/>
+      <img alt="logo" src="../assets/logos/logo2.svg"/>
       <h4>
         <strong>MIKE FINNEGAN</strong>
       </h4>

@@ -1,7 +1,12 @@
 <template>
   <div class="light-box" @click="onBackgroundClick">
     <span @click="onXClick" class="close">&times;</span>
-    <img @click="onImageClick" :src="source" class="light-box__image">
+    <img
+      @click="onImageClick"
+      :src="source"
+      :alt="alt"
+      class="light-box__image"
+    >
   </div>
 </template>
 
@@ -16,6 +21,10 @@
         type: String,
         required: false,
       },
+      alt: {
+        type: String,
+        required: false,
+      }
     },
 
     methods: {

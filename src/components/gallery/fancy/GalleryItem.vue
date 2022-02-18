@@ -1,7 +1,13 @@
 <template>
   <div class="fancy-gallery-item">
     <div v-if="orientation === 'left'" class="fancy-gallery-item-left">
-      <img @click="onImageClick" :alt="imageAlt" class="fancy-gallery-item-thumb" height="520" :src="getImage(imageSource)">
+      <img
+        @click="onImageClick"
+        :alt="imageAlt"
+        :src="getImage(imageSource)"
+        height="520"
+        class="fancy-gallery-item-thumb"
+      >
       <div class="fancy-gallery-item-text">
         <h3>{{caption}}</h3>
         <p><strong>{{description}}</strong></p>
@@ -16,7 +22,13 @@
         <h3>{{caption}}</h3>
         <p><strong>{{description}}</strong></p>
       </div>
-      <img @click="onImageClick" :alt="imageAlt" class="fancy-gallery-item-thumb" height="520" :src="getImage(imageSource)">
+      <img
+        @click="onImageClick"
+        :alt="imageAlt"
+        :src="getImage(imageSource)"
+        height="520"
+        class="fancy-gallery-item-thumb"
+      >
     </div>
   </div>
 </template>
