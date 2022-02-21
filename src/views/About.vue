@@ -17,7 +17,7 @@
       </h6>
     </div>
     <div class="about-mobile mobile-only">
-      <img src="../assets/logos/logo2.svg"/>
+      <img alt="logo" src="../assets/logos/logo2.svg"/>
       <h4>
         <strong>MIKE FINNEGAN</strong>
       </h4>
@@ -42,18 +42,17 @@ export default {
 </script>
 <style lang="scss">
   .about {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
 
     .about-desktop {
-      width: 100%;
+      flex-grow: 1;
     }
 
     .about-mobile {
-      width: 100%;
+      flex-grow: 1;
       text-align: center;
 
       img {

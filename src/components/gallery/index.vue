@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LightBox @onLightBoxExit="closeLightBox" :source="lightBoxImageSrc" v-if="isLightBoxOpen" />
+    <LightBox @onLightBoxExit="closeLightBox" :source="lightBoxImageSrc" :alt="lightBoxImageAlt" v-if="isLightBoxOpen" />
     <FancyGallery class="desktop-only" :pictures="pictures" @onGalleryItemClick="openLightBox"/>
     <SimpleGallery class="mobile-only" :pictures="pictures" @onGalleryItemClick="openLightBox"/>
   </div>
@@ -27,15 +27,19 @@ export default {
   setup() {
     const isLightBoxOpen = ref(false);
     const lightBoxImageSrc = ref('');
+    const lightBoxImageAlt = ref('');
 
     return {
       lightBoxImageSrc,
+      lightBoxImageAlt,
       isLightBoxOpen
     };
   },
   methods: {
     openLightBox(image) {
+      console.log('DEBUG IMAGE: ', image)
       this.lightBoxImageSrc = getImage(image.src);
+      this.lightBoxImageAlt = image.alt;
       this.isLightBoxOpen = true;
     },
     closeLightBox() {

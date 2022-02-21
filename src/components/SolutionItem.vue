@@ -1,6 +1,10 @@
 <template>
   <div class="grid-item">
-    <img class="grid-item__image" :src="getImage(solution.imagePath)"/>
+    <img
+      :alt="solution.description"
+      :src="getImage(solution.imagePath)"
+      class="grid-item__image"
+    />
     <p class="grid-item__paragraph">
       {{solution.description}}
     </p>

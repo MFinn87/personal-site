@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HamburgerMenu :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" class="mobile-only" />
-    <Navbar :currentRoute="currentRoute" :menuOptions="menuOptions" :onMenuOptionClick="routeToMenuOption" :style="navbarStyle" class="desktop-only" />
+    <HamburgerMenu :menuOptions="menuOptions" class="mobile-only" />
+    <Navbar :currentRoute="currentRoute" :menuOptions="menuOptions" :style="navbarStyle" class="desktop-only" />
   </div>
 </template>
 <script>
@@ -16,13 +16,7 @@ export default {
     navbarStyle: String,
   },
   methods: {
-    routeToMenuOption: function(menuOption) {
-      if (menuOption.type === 'file') {
-        window.open(menuOption.href, "_blank")
-      } else if (menuOption.type === 'view'){
-        this.$router.push(menuOption.href);
-      }
-    }
+    
   },
   setup() {
     const route = useRoute();

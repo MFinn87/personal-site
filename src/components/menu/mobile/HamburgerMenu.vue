@@ -1,8 +1,13 @@
 <template>
   <Slide class="hamburger-menu" right :closeOnNavigation="true">
-    <div v-for="option in menuOptions" :key="option.id" @click="onHamburgerMenuOptionClick(option)" class="menu-option"> 
+    <a
+      v-for="option in menuOptions"
+      :href="option.href"
+      :target="getAnchorTarget(option)"
+      :key="option.id"
+      class="menu-option">
       {{ option.caption.toUpperCase() }}
-    </div>
+    </a>
   </Slide>
 </template>
 <script>
@@ -15,11 +20,12 @@ export default {
   },
   props: {
     menuOptions: Array,
-    onMenuOptionClick: Function
   },
   methods: {
-    onHamburgerMenuOptionClick(menuOption) {
-      this.onMenuOptionClick(menuOption);
+    getAnchorTarget(menuOption) {
+      return (menuOption.type === 'view')
+        ? '_self'
+        : '_blank'
     }
   }
 }
@@ -27,13 +33,13 @@ export default {
 </script>
 <style lang="scss">
   .hamburger-menu {
-    height: 75px;
+    height: 102px;
   }
 
   /* Burger menu when open */
   body.bm-overlay {
     .bm-menu {
-      width: 100vw !important;
+      width: 100% !important;
       background-color: var(--background-black);
 
       .bm-cross-button {
@@ -60,8 +66,10 @@ export default {
   /* Burger menu when closed */
   .bm-burger-button {
     /* left: calc(100% - 36px) !important; */
-    left: calc(100vw - 36px - 3em) !important; /* burger bars are 36px wide, global app side-padding is 3em; */
-    top: calc(19px + 1em) !important;
+    position: relative;
+    /* left: calc(100vw - 36px - 6em) !important; */ /* burger bars are 36px wide, global app side-padding is 3em; */
+    margin-right: 36px; /* burger bars are 36px */
+    /* top: calc(19px + 1em) !important; */
   }
 
   .icon {
