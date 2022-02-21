@@ -34,6 +34,10 @@ export default {
 @import './styles/responsive.scss';
 @import './styles/elements.scss';
 
+html {
+  background-color: var(--background-black);
+}
+
 body {
   height: 100%;
   margin: 0px;
@@ -57,15 +61,14 @@ body {
   flex-grow: 1;
   align-items: stretch;
 
-  padding-left: 3em;
-  padding-right: 3em;
-
   .router-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
 
+    padding-left: 3em;
+    padding-right: 3em;
     padding-top: 3em;
     padding-bottom: 2em;
 
