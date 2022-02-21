@@ -66,7 +66,7 @@ export default {
   /* Burger menu when closed */
   .bm-burger-button {
     /* left: calc(100% - 36px) !important; */
-    position: relative;
+    position: relative !important;
     /* left: calc(100vw - 36px - 6em) !important; */ /* burger bars are 36px wide, global app side-padding is 3em; */
     margin-right: 36px; /* burger bars are 36px */
     /* top: calc(19px + 1em) !important; */
