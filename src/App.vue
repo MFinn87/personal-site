@@ -34,6 +34,10 @@ export default {
 @import './styles/responsive.scss';
 @import './styles/elements.scss';
 
+html {
+  background-color: var(--background-black);
+}
+
 body {
   height: 100%;
   margin: 0px;
