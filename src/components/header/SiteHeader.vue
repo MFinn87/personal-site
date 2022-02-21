@@ -23,7 +23,7 @@
         class="site-header-logo mobile-only"
       >
     <div>
-      <Menu :menuOptions="menuScreens" :navbarStyle="''" class="menu" />
+      <Menu :menuOptions="menuScreens" :navbarStyle="''" />
     </div>
   </div>
 </template>

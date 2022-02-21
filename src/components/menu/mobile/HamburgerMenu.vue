@@ -39,7 +39,7 @@ export default {
   /* Burger menu when open */
   body.bm-overlay {
     .bm-menu {
-      width: 100vw !important;
+      width: 100% !important;
       background-color: var(--background-black);
 
       .bm-cross-button {
