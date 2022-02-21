@@ -61,15 +61,14 @@ body {
   flex-grow: 1;
   align-items: stretch;
 
-  padding-left: 3em;
-  padding-right: 3em;
-
   .router-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
 
+    padding-left: 3em;
+    padding-right: 3em;
     padding-top: 3em;
     padding-bottom: 2em;
 

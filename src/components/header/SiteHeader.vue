@@ -73,6 +73,9 @@ export default {
     top: 0;
     background-color: var(--background-black);
 
+    padding-left: 3em;
+    padding-right: 3em;
+
     .site-header__mobile-placeholder {
       height: 38.2px;
       width: 63px;
