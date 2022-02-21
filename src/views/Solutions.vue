@@ -52,6 +52,8 @@ export default {
 </script>
 <style lang="scss">
   .solutions {
+    width: 100%;
+
     .solutions-text {
       display: flex;
       flex-direction: row;
