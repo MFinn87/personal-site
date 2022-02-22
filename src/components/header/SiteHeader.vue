@@ -68,6 +68,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -75,6 +76,7 @@ export default {
 
     padding-left: 3em;
     padding-right: 3em;
+    max-width: var(--max-app-width);
 
     .site-header__mobile-placeholder {
       height: 38.2px;

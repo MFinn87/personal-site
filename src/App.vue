@@ -1,9 +1,11 @@
 <template>
   <div class="app-content">
-    <SiteHeader
-      :menuScreens="menuScreens"
-      logo="assets/logos/logo2.svg"
-    />
+    <div class="header-container">
+      <SiteHeader
+        :menuScreens="menuScreens"
+        logo="assets/logos/logo2.svg"
+      />
+    </div>
     <div class="router-container">
       <router-view id="router" />
     </div>
@@ -61,6 +63,12 @@ body {
   flex-grow: 1;
   align-items: stretch;
 
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .router-container {
     display: flex;
     flex-direction: column;
@@ -74,7 +82,7 @@ body {
 
     #router {
       flex-grow: 1;
-      /* max-width: 2200px; */
+      max-width: var(--max-app-width);
     }
   }
 }

@@ -7,18 +7,10 @@
   .mobile-only {
     display: none !important;
   }
-
-  .desktop-only {
-    /* display: initial !important; */
-  }
 }
 
 @media only screen and (max-width: 860px) {
   .desktop-only {
     display: none !important;
   };
-
-  .mobile-only {
-    /* display: initial !important; */
-  }
 }
