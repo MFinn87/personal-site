@@ -134,15 +134,15 @@ export default {
           message: this.message,
         })
         .then((response) => {
-          if(response.data === "OK") {
-            alert("Message sent. Thanks, and talk to you soon!");
-            this.clearInputFields();
-          }
-          else {
-            alert("Error: " + response.data);
+          if(response.data !== "Ok") {
+            console.log(response)
           }
         })
-        .catch((error) => alert(error))
+        .catch((error) => console.log(error))
+        .finally(() => {
+          alert("Message sent. Thanks, and talk to you soon!");
+          this.clearInputFields();
+        })
       }
     }
   } 
