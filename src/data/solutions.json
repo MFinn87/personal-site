@@ -7,7 +7,7 @@
         "width": 80,
         "height": 80,
         "color": "#1010a0",
-        "description": "Websites of all kinds, from simple brochure sites to complex e-commerce and business systems."
+        "description": "Websites of all kinds, from simple brochure sites to complex e-commerce and business systems"
     },
     {
         "id": 2,
@@ -16,7 +16,7 @@
         "width": 80,
         "height": 80,
         "color": "#303030",
-        "description": "Apps for any platform - mobile and desktop."
+        "description": "Apps for any platform - mobile and desktop"
     },
     {
         "id": 3,
@@ -26,7 +26,7 @@
         "width": 80,
         "height": 80,
         "color": "#00a005",
-        "description": "Dashboards, spreadsheets, pdf reports, data imports and exports, and more."
+        "description": "Dashboards, spreadsheets, pdf reports, data imports and exports, and more"
     },
     {
         "id": 4,
@@ -36,6 +36,6 @@
         "width": 80,
         "height": 80,
         "color": "#a0a0a0",
-        "description": "Web APIs, database schema design, process automation, app integrations, web scraping, and hosting."
+        "description": "Web APIs, database schema design, process automation, app integrations, web scraping, and hosting"
     }
 ]

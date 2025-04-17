@@ -6,17 +6,15 @@
         </h3>
       </div>
       <div class="solutions-text-detail">
-        <strong>
-          <p>
-            I've launched several successful SaaS products and developed custom software for clients in the marketing, manufacturing, food/beverage, and pharmaceutical verticals. I've developed, extended, and maintained complex ERP, CRM, and Inventory Management systems.
-          </p>
-          <p>
-            I'd be eager to learn more about your software needs, and conduct a feasibility analysis.
-          </p>
-          <p>
-            Some of the more common software development work I do is listed below:
-          </p>
-        </strong>
+        <p>
+          I'm a versatile full stack software developer with extensive experience building web applications, APIs, automation, integrations, and reporting for businesses across the manufacturing, transportation, food/beverage, and pharmaceutical verticals.
+        </p>
+        <p>
+          With expertise in TypeScript, JavaScript, Go, SQL, Python, HTML, and CSS, I've consistently delivered robust solutions for complex business needs.
+        </p>
+        <p>
+          Some of the more common software development work I do is listed below:
+        </p>
       </div>
     </div>
     <div class="desktop-only negative-space-row">
