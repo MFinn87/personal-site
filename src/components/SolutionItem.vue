@@ -44,9 +44,5 @@ export default {
       object-fit: scale-down;
       margin-bottom: .5em;
     }
-
-    .grid-item__paragraph {
-      /* font-size: .9em; */
-    }
   }
 </style>

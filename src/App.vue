@@ -71,7 +71,7 @@ body {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 
     #router {
       flex-grow: 1;
