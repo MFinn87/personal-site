@@ -40,8 +40,9 @@ html {
 
 body {
   height: 100%;
-  margin: 0px;
+  margin: auto;
   padding: 0px;
+  max-width: 2200px;
 }
 
 #app {
@@ -70,7 +71,7 @@ body {
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 
     #router {
       flex-grow: 1;

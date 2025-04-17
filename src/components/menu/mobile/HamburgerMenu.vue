@@ -33,7 +33,7 @@ export default {
 </script>
 <style lang="scss">
   .hamburger-menu {
-    height: 102px;
+    height: 94px;
   }
 
   /* Burger menu when open */
@@ -70,6 +70,7 @@ export default {
     /* left: calc(100vw - 36px - 6em) !important; */ /* burger bars are 36px wide, global app side-padding is 3em; */
     margin-right: 36px; /* burger bars are 36px */
     /* top: calc(19px + 1em) !important; */
+    top: 2em !important;
   }
 
   .icon {

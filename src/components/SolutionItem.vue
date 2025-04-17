@@ -42,11 +42,7 @@ export default {
     .grid-item__image {
       height: 75px;
       object-fit: scale-down;
-      margin-bottom: 2em;
-    }
-
-    .grid-item__paragraph {
-      font-size: .9em;
+      margin-bottom: .5em;
     }
   }
 </style>

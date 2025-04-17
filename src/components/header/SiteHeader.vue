@@ -6,7 +6,7 @@
         width="63"
         height="38.2"
         alt="logo"
-        class="site-header-logo desktop-only"
+        class="site-header-logo-desktop desktop-only"
       >
       <div
         v-if="isOnHomeScreen()"
@@ -20,7 +20,7 @@
         width="63"
         height="38.2"
         alt="logo"
-        class="site-header-logo mobile-only"
+        class="site-header-logo-mobile mobile-only"
       >
     <div>
       <Menu :menuOptions="menuScreens" :navbarStyle="''" />
@@ -81,7 +81,7 @@ export default {
       width: 63px;
     }
 
-    .site-header-logo {
+    .site-header-logo-desktop {
       margin-top: 2em;
       margin-bottom: 2em;
       cursor: pointer;

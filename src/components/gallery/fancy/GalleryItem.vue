@@ -20,7 +20,7 @@
       </div>
       <div class="fancy-gallery-item-text">
         <h3>{{caption}}</h3>
-        <p><strong>{{description}}</strong></p>
+        <p>{{description}}</p>
       </div>
       <img
         @click="onImageClick"
@@ -61,7 +61,7 @@ export default {
 </script>
 <style lang="scss">
   .fancy-gallery-item {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 
     img {
       cursor: pointer;

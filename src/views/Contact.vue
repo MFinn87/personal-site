@@ -1,9 +1,6 @@
 <template>
   <div class="contact">
     <div class="contact-left">
-      <div class="desktop-only contact-left-title">
-        
-      </div>
       <div class="contact-left-body">
         <div class="contact-left-body-content">
           <h3>LET'S GET IN TOUCH.</h3>
@@ -22,7 +19,7 @@
     </div>
     <div class="contact-right">
       <div class="contact-right-title">
-        <h6>Leave me your info and a message, and I will get back to you ASAP.</h6>
+        <h6>Leave me your info and a message, and I will get back to you as soon as possible.</h6>
       </div>
       <div class="contact-right-body">
         <form
@@ -32,10 +29,10 @@
 
         <p v-if="errors.length" class="alert">
           <b>Wait! Please correct the following error(s):</b>
-          <ul>
-          <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
-          </ul>
         </p>
+        <ul>
+          <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
+        </ul>
 
         <label for="name"></label>
         <input
@@ -194,6 +191,7 @@ export default {
       display: flex;
       flex-direction: column;
       flex: 1;
+      max-width: 764px;
 
       h6 {
         margin-bottom: 1.5em;
