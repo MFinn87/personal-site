@@ -23,7 +23,7 @@
       </div>
       <div class="contact-right-body">
         <form
-        @submit="checkForm"
+        @submit="sendContactRequest"
         method="post"
         >
 
@@ -111,36 +111,71 @@ export default {
         this.phone = '';
         this.message = '';
     },
-    checkForm: function(e) {
-      e.preventDefault()
+    validateContactRequest: function() {
       this.errors = [];
+
       if(!this.name) {
-        this.errors.push('Please let me know what your name is!')
+        this.errors.push('Please let me know what your name is!');
       }
       if(!this.email){
-        this.errors.push('Please enter in your email.')
+        this.errors.push('Please enter in your email.');
       }
       if(!this.message) {
-        this.errors.push('Please leave a message.')
+        this.errors.push('Please leave a message.');
       }
-      else {
-        return axios.post("https://www.finnyg.com/api/contact-requests", {
-          name: this.name,
-          email: this.email,
-          phone: this.phone,
-          message: this.message,
-        })
+
+      return this.errors;
+    },
+    parseError: (error) => {
+      // May or may not exist, depending on how hard the server errored
+      const serverResponseBodyErrorMessage = (error?.response?.data)?.error;
+
+      // Axios's generic error message based on http response status code.
+      // For example: 400 -> "Bad Request", etc.
+      const axiosDefaultErrorMessageBasedOnStatusCode = error?.response?.statusText;
+
+      // This applies when server doesn't even respond
+      // and/or networking issues occurred.
+      const statusCodeErrorMessage = error.message;
+
+      // If none of the above resolve to anything useful, then at least
+      // use this error message. I'm not sure there's any scenario where
+      // this is used, but it's here for safety.
+      const fallbackErrorMessage = "An unknown error occurred";
+
+      const errorText =
+        serverResponseBodyErrorMessage ||
+        axiosDefaultErrorMessageBasedOnStatusCode ||
+        statusCodeErrorMessage ||
+        fallbackErrorMessage;
+
+      return errorText;
+    },
+    sendContactRequest: function(e) {
+      e.preventDefault()
+      this.validateContactRequest();
+
+      return axios.post("https://www.finnyg.com/api/contact-requests", {
+        name: this.name,
+        email: this.email,
+        phone: this.phone,
+        message: this.message,
+      })
         .then((response) => {
-          if(response.data !== "Ok") {
+          if (response?.data !== "Ok") {
             console.log(response)
+            alert("An unknown error occurred. Please try again.");
+          }
+
+          if (this.errors.length === 0 && response?.data === "Ok") {
+            this.clearInputFields();
+            alert("Message sent. Thanks, and talk to you soon!");
           }
         })
-        .catch((error) => console.log(error))
-        .finally(() => {
-          alert("Message sent. Thanks, and talk to you soon!");
-          this.clearInputFields();
+        .catch((error) => {
+          const errorMessage = this.parseError(error);
+          alert(errorMessage);
         })
-      }
     }
   } 
 }
