@@ -162,12 +162,12 @@ export default {
         message: this.message,
       })
         .then((response) => {
-          if (response?.data !== "Ok") {
+          if (response?.data?.data !== "Ok") {
             console.log(response)
             alert("An unknown error occurred. Please try again.");
           }
 
-          if (this.errors.length === 0 && response?.data === "Ok") {
+          if (this.errors.length === 0 && response?.data?.data === "Ok") {
             this.clearInputFields();
             alert("Message sent. Thanks, and talk to you soon!");
           }
